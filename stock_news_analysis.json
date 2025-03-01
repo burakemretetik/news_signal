@@ -1,8 +1,13 @@
 {
-  "timestamp": "2025-03-01T17:23:33.578744",
+  "timestamp": "2025-03-01T19:15:47.071208",
   "total_batches": 13,
-  "total_direct_news": 0,
-  "direct_news": [],
+  "total_direct_news": 1,
+  "direct_news": [
+    {
+      "sirket_adi": "TÜRK HAVA YOLLARI",
+      "haber_url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/thy-2024-yilinda-85-2-milyon-yolcuya-hizmet-verdi_ID1608355/"
+    }
+  ],
   "batch_results": [
     {
       "batch": 1,
@@ -209,8 +214,13 @@
         "TÜMOSAN MOTOR VE TRAKTÖR SANAYİ"
       ],
       "result": {
-        "direct_news": [],
-        "no_direct_news_found": true
+        "direct_news": [
+          {
+            "sirket_adi": "TÜRK HAVA YOLLARI",
+            "haber_url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/thy-2024-yilinda-85-2-milyon-yolcuya-hizmet-verdi_ID1608355/"
+          }
+        ],
+        "no_direct_news_found": false
       }
     },
     {
