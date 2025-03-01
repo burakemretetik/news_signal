@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-03-01T15:07:48.304699",
+  "timestamp": "2025-03-01T16:28:11.488953",
   "total_batches": 13,
   "total_direct_news": 0,
   "direct_news": [],
@@ -7,16 +7,16 @@
     {
       "batch": 1,
       "stocks": [
-        "ADEL KALEMC\u0130L\u0130K T\u0130CARET VE SANAY\u0130",
-        "ANADOLU EFES B\u0130RACILIK VE MALT SANAY\u0130\u0130",
-        "AG ANADOLU GRUBU HOLD\u0130NG",
-        "AGROTECH Y\u00dcKSEK TEKNOLOJ\u0130 VE YATIRIM",
-        "AHLATCI DO\u011eAL GAZ DA\u011eITIM ENERJ\u0130 VE YATIRIM",
+        "ADEL KALEMCİLİK TİCARET VE SANAYİ",
+        "ANADOLU EFES BİRACILIK VE MALT SANAYİİ",
+        "AG ANADOLU GRUBU HOLDİNG",
+        "AGROTECH YÜKSEK TEKNOLOJİ VE YATIRIM",
+        "AHLATCI DOĞAL GAZ DAĞITIM ENERJİ VE YATIRIM",
         "AKBANK",
-        "AK\u00c7ANSA \u00c7\u0130MENTO SANAY\u0130 VE T\u0130CARET",
-        "AKFEN GAYR\u0130MENKUL YATIRIM ORTAKLI\u011eI",
-        "AKFEN YEN\u0130LENEB\u0130L\u0130R ENERJ\u0130",
-        "AKSA AKR\u0130L\u0130K K\u0130MYA SANAY\u0130\u0130"
+        "AKÇANSA ÇİMENTO SANAYİ VE TİCARET",
+        "AKFEN GAYRİMENKUL YATIRIM ORTAKLIĞI",
+        "AKFEN YENİLENEBİLİR ENERJİ",
+        "AKSA AKRİLİK KİMYA SANAYİİ"
       ],
       "result": {
         "error": "Failed to parse response",
@@ -26,35 +26,35 @@
     {
       "batch": 2,
       "stocks": [
-        "AKSA ENERJ\u0130 \u00dcRET\u0130M",
-        "ALARKO HOLD\u0130NG",
-        "ALBARAKA T\u00dcRK KATILIM BANKASI",
-        "ALFA SOLAR ENERJ\u0130 SANAY\u0130 VE T\u0130CARET",
-        "ALTINAY SAVUNMA TEKNOLOJ\u0130LER\u0130",
-        "ANADOLU HAYAT EMEKL\u0130L\u0130K",
-        "ANADOLU ANON\u0130M T\u00dcRK S\u0130GORTA \u015e\u0130",
-        "AR\u00c7EL\u0130K",
-        "ARD GRUP B\u0130L\u0130\u015e\u0130M TEKNOLOJ\u0130LER\u0130",
-        "ASELSAN ELEKTRON\u0130K SANAY\u0130 VE T\u0130CARET"
+        "AKSA ENERJİ ÜRETİM",
+        "ALARKO HOLDİNG",
+        "ALBARAKA TÜRK KATILIM BANKASI",
+        "ALFA SOLAR ENERJİ SANAYİ VE TİCARET",
+        "ALTINAY SAVUNMA TEKNOLOJİLERİ",
+        "ANADOLU HAYAT EMEKLİLİK",
+        "ANADOLU ANONİM TÜRK SİGORTA Şİ",
+        "ARÇELİK",
+        "ARD GRUP BİLİŞİM TEKNOLOJİLERİ",
+        "ASELSAN ELEKTRONİK SANAYİ VE TİCARET"
       ],
       "result": {
         "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [\n    {\"sirket_adi\": \"ASELSAN ELEKTRON\u0130K SANAY\u0130 VE T\u0130CARET\", \"haber_url\": \"https://www.bloomberght.com/aselsan-bmc-ile-yeni-sozlesme-imzaladi-3742401\"}\n  ],\n  \"no_direct_news_found\": false\n}\n```"
+        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
       }
     },
     {
       "batch": 3,
       "stocks": [
-        "ASTOR ENERJ\u0130",
-        "BERA HOLD\u0130NG",
-        "BOSCH FREN S\u0130STEMLER\u0130 SANAY\u0130 VE T\u0130CARET",
-        "B\u0130EN YAPI \u00dcR\u00dcNLER\u0130 SANAY\u0130 TUR\u0130ZM VE T\u0130CARET",
-        "B\u0130M B\u0130RLE\u015e\u0130K MA\u011eAZALAR",
-        "1000 YATIRIMLAR HOLD\u0130NG",
-        "B\u0130OTREND \u00c7EVRE VE ENERJ\u0130 YATIRIMLARI",
-        "BE\u015e\u0130KTA\u015e FUTBOL YATIRIMLARI SANAY\u0130 VE T\u0130CARET",
-        "BO\u011eAZ\u0130\u00c7\u0130 BETON SANAY\u0130 VE T\u0130CARET",
-        "BORUSAN B\u0130RLE\u015e\u0130K BORU FABR\u0130KALARI SANAY\u0130 VE T\u0130CARET"
+        "ASTOR ENERJİ",
+        "BERA HOLDİNG",
+        "BOSCH FREN SİSTEMLERİ SANAYİ VE TİCARET",
+        "BİEN YAPI ÜRÜNLERİ SANAYİ TURİZM VE TİCARET",
+        "BİM BİRLEŞİK MAĞAZALAR",
+        "1000 YATIRIMLAR HOLDİNG",
+        "BİOTREND ÇEVRE VE ENERJİ YATIRIMLARI",
+        "BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET",
+        "BOĞAZİÇİ BETON SANAYİ VE TİCARET",
+        "BORUSAN BİRLEŞİK BORU FABRİKALARI SANAYİ VE TİCARET"
       ],
       "result": {
         "error": "Failed to parse response",
@@ -65,34 +65,34 @@
       "batch": 4,
       "stocks": [
         "BORUSAN YATIRIM VE PAZARLAMA",
-        "BATIS\u00d6KE S\u00d6KE \u00c7\u0130MENTO SANAY\u0130\u0130",
-        "BATI\u00c7\u0130M BATI ANADOLU \u00c7\u0130MENTO SANAY\u0130\u0130",
-        "\u00c7AN2 TERM\u0130K",
-        "COCA-COLA \u0130\u00c7ECEK",
-        "\u00c7\u0130MSA \u00c7\u0130MENTO SANAY\u0130 VE T\u0130CARET",
-        "\u00c7ELEB\u0130 HAVA SERV\u0130S\u0130",
-        "CVK MADEN \u0130\u015eLETMELER\u0130 SANAY\u0130 VE T\u0130CARET",
-        "CW ENERJ\u0130 M\u00dcHEND\u0130SL\u0130K T\u0130CARET VE SANAY\u0130",
-        "DO\u011eU\u015e OTOMOT\u0130V SERV\u0130S VE T\u0130CARET"
+        "BATISÖKE SÖKE ÇİMENTO SANAYİİ",
+        "BATIÇİM BATI ANADOLU ÇİMENTO SANAYİİ",
+        "ÇAN2 TERMİK",
+        "COCA-COLA İÇECEK",
+        "ÇİMSA ÇİMENTO SANAYİ VE TİCARET",
+        "ÇELEBİ HAVA SERVİSİ",
+        "CVK MADEN İŞLETMELERİ SANAYİ VE TİCARET",
+        "CW ENERJİ MÜHENDİSLİK TİCARET VE SANAYİ",
+        "DOĞUŞ OTOMOTİV SERVİS VE TİCARET"
       ],
       "result": {
         "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [\n    {\"sirket_adi\": \"\u00c7\u0130MSA \u00c7\u0130MENTO SANAY\u0130 VE T\u0130CARET\", \"haber_url\": \"https://www.haberturk.com/cimsadan-2024-yilinda-282-milyar-tl-ciro-3769779-ekonomi\"}\n  ],\n  \"no_direct_news_found\": false\n}\n```"
+        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
       }
     },
     {
       "batch": 5,
       "stocks": [
-        "DO\u011eAN \u015e\u0130RKETLER GRUBU HOLD\u0130NG",
-        "E\u0130S ECZACIBA\u015eI \u0130LA\u00c7 SINA\u0130 VE F\u0130NANSAL YATIRIMLAR SANAY\u0130 VE T\u0130CARET",
-        "ECZACIBA\u015eI YATIRIM HOLD\u0130NG ORTAKLI\u011eI",
-        "EGE END\u00dcSTR\u0130 VE T\u0130CARET",
-        "EMLAK KONUT GAYR\u0130MENKUL YATIRIM ORTAKLI\u011eI",
-        "ENERYA ENERJ\u0130",
-        "ENERJ\u0130SA ENERJ\u0130",
-        "ENKA \u0130N\u015eAAT VE SANAY\u0130",
-        "ERE\u011eL\u0130 DEM\u0130R VE \u00c7EL\u0130K FABR\u0130KALARI",
-        "EUROPOWER ENERJ\u0130 VE OTOMASYON TEKNOLOJ\u0130LER\u0130 SANAY\u0130 T\u0130CARET"
+        "DOĞAN ŞİRKETLER GRUBU HOLDİNG",
+        "EİS ECZACIBAŞI İLAÇ SINAİ VE FİNANSAL YATIRIMLAR SANAYİ VE TİCARET",
+        "ECZACIBAŞI YATIRIM HOLDİNG ORTAKLIĞI",
+        "EGE ENDÜSTRİ VE TİCARET",
+        "EMLAK KONUT GAYRİMENKUL YATIRIM ORTAKLIĞI",
+        "ENERYA ENERJİ",
+        "ENERJİSA ENERJİ",
+        "ENKA İNŞAAT VE SANAYİ",
+        "EREĞLİ DEMİR VE ÇELİK FABRİKALARI",
+        "EUROPOWER ENERJİ VE OTOMASYON TEKNOLOJİLERİ SANAYİ TİCARET"
       ],
       "result": {
         "error": "Failed to parse response",
@@ -102,16 +102,16 @@
     {
       "batch": 6,
       "stocks": [
-        "EUROPEN END\u00dcSTR\u0130 \u0130N\u015eAAT SANAY\u0130 VE T\u0130CARET",
-        "FENERBAH\u00c7E FUTBOL",
-        "FORD OTOMOT\u0130V SANAY\u0130",
-        "T\u00dcRK\u0130YE GARANT\u0130 BANKASI",
-        "G\u0130R\u0130\u015e\u0130M ELEKTR\u0130K SANAY\u0130 TAAHH\u00dcT VE T\u0130CARET",
-        "G\u00d6LTA\u015e G\u00d6LLER B\u00d6LGES\u0130 \u00c7\u0130MENTO SANAY\u0130 VE T\u0130CARET",
-        "G\u00dcBRE FABR\u0130KALARI",
-        "GALATA WIND ENERJ\u0130",
-        "T\u00dcRK\u0130YE HALK BANKASI",
-        "HEKTA\u015e T\u0130CARET"
+        "EUROPEN ENDÜSTRİ İNŞAAT SANAYİ VE TİCARET",
+        "FENERBAHÇE FUTBOL",
+        "FORD OTOMOTİV SANAYİ",
+        "TÜRKİYE GARANTİ BANKASI",
+        "GİRİŞİM ELEKTRİK SANAYİ TAAHHÜT VE TİCARET",
+        "GÖLTAŞ GÖLLER BÖLGESİ ÇİMENTO SANAYİ VE TİCARET",
+        "GÜBRE FABRİKALARI",
+        "GALATA WIND ENERJİ",
+        "TÜRKİYE HALK BANKASI",
+        "HEKTAŞ TİCARET"
       ],
       "result": {
         "error": "Failed to parse response",
@@ -121,16 +121,16 @@
     {
       "batch": 7,
       "stocks": [
-        "I\u015eIKLAR ENERJ\u0130 VE YAPI HOLD\u0130NG",
-        "\u0130PEK DO\u011eAL ENERJ\u0130 KAYNAKLARI ARA\u015eTIRMA VE \u00dcRET\u0130M",
-        "\u0130\u015e GAYR\u0130MENKUL YATIRIM ORTAKLI\u011eI",
-        "\u0130\u015e YATIRIM MENKUL DE\u011eERLER",
-        "\u0130ZDEM\u0130R ENERJ\u0130 ELEKTR\u0130K \u00dcRET\u0130M",
-        "KARSAN OTOMOT\u0130V SANAY\u0130\u0130 VE T\u0130CARET",
-        "KAYSER\u0130 \u015eEKER FABR\u0130KASI",
-        "KOCAER \u00c7EL\u0130K SANAY\u0130 VE T\u0130CARET",
-        "KO\u00c7 HOLD\u0130NG",
-        "KALESERAM\u0130K \u00c7ANAKKALE KALEBODUR SERAM\u0130K SANAY\u0130"
+        "IŞIKLAR ENERJİ VE YAPI HOLDİNG",
+        "İPEK DOĞAL ENERJİ KAYNAKLARI ARAŞTIRMA VE ÜRETİM",
+        "İŞ GAYRİMENKUL YATIRIM ORTAKLIĞI",
+        "İŞ YATIRIM MENKUL DEĞERLER",
+        "İZDEMİR ENERJİ ELEKTRİK ÜRETİM",
+        "KARSAN OTOMOTİV SANAYİİ VE TİCARET",
+        "KAYSERİ ŞEKER FABRİKASI",
+        "KOCAER ÇELİK SANAYİ VE TİCARET",
+        "KOÇ HOLDİNG",
+        "KALESERAMİK ÇANAKKALE KALEBODUR SERAMİK SANAYİ"
       ],
       "result": {
         "error": "Failed to parse response",
@@ -140,54 +140,54 @@
     {
       "batch": 8,
       "stocks": [
-        "KONTROLMAT\u0130K TEKNOLOJ\u0130 ENERJ\u0130 VE M\u00dcHEND\u0130SL\u0130K",
-        "KONYA \u00c7\u0130MENTO SANAY\u0130\u0130",
-        "KOZA ANADOLU METAL MADENC\u0130L\u0130K \u0130\u015eLETMELER\u0130",
-        "KOZA ALTIN \u0130\u015eLETMELER\u0130",
-        "KATILIMEV\u0130M TASARRUF F\u0130NANSMAN",
-        "LDR TUR\u0130ZM",
-        "L\u0130MAK DO\u011eU ANADOLU \u00c7\u0130MENTO SANAY\u0130 VE T\u0130CARET",
-        "MARG\u00dcN ENERJ\u0130 \u00dcRET\u0130M SANAY\u0130 VE T\u0130CARET",
-        "MAV\u0130 G\u0130Y\u0130M SANAY\u0130 VE T\u0130CARET",
-        "M\u0130GROS T\u0130CARET"
+        "KONTROLMATİK TEKNOLOJİ ENERJİ VE MÜHENDİSLİK",
+        "KONYA ÇİMENTO SANAYİİ",
+        "KOZA ANADOLU METAL MADENCİLİK İŞLETMELERİ",
+        "KOZA ALTIN İŞLETMELERİ",
+        "KATILIMEVİM TASARRUF FİNANSMAN",
+        "LDR TURİZM",
+        "LİMAK DOĞU ANADOLU ÇİMENTO SANAYİ VE TİCARET",
+        "MARGÜN ENERJİ ÜRETİM SANAYİ VE TİCARET",
+        "MAVİ GİYİM SANAYİ VE TİCARET",
+        "MİGROS TİCARET"
       ],
       "result": {
         "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [\n    {\"sirket_adi\": \"KONYA \u00c7\u0130MENTO SANAY\u0130\u0130\", \"haber_url\": \"https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/konyadan-39-ulkeye-ev-bakim-ihracati_ID1608321/\"}\n  ],\n  \"no_direct_news_found\": false\n}\n```"
+        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
       }
     },
     {
       "batch": 9,
       "stocks": [
-        "M\u0130A TEKNOLOJ\u0130",
-        "MLP SA\u011eLIK H\u0130ZMETLER\u0130",
-        "NET HOLD\u0130NG",
-        "OBA MAKARNACILIK SANAY\u0130 VE T\u0130CARET",
-        "ODA\u015e ELEKTR\u0130K \u00dcRET\u0130M SANAY\u0130 T\u0130CARET",
-        "OTOKAR OTOMOT\u0130V VE SAVUNMA SANAY\u0130",
-        "OYAK \u00c7\u0130MENTO FABR\u0130KALARI",
-        "PAP\u0130LON SAVUNMA TEKNOLOJ\u0130 VE T\u0130CARET",
-        "PAS\u0130F\u0130K EURAS\u0130A LOJ\u0130ST\u0130K DI\u015e T\u0130CARET",
-        "PEKER GAYR\u0130MENKUL YATIRIM ORTAKLI\u011eI"
+        "MİA TEKNOLOJİ",
+        "MLP SAĞLIK HİZMETLERİ",
+        "NET HOLDİNG",
+        "OBA MAKARNACILIK SANAYİ VE TİCARET",
+        "ODAŞ ELEKTRİK ÜRETİM SANAYİ TİCARET",
+        "OTOKAR OTOMOTİV VE SAVUNMA SANAYİ",
+        "OYAK ÇİMENTO FABRİKALARI",
+        "PAPİLON SAVUNMA TEKNOLOJİ VE TİCARET",
+        "PASİFİK EURASİA LOJİSTİK DIŞ TİCARET",
+        "PEKER GAYRİMENKUL YATIRIM ORTAKLIĞI"
       ],
       "result": {
         "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [\n    {\"sirket_adi\": \"M\u0130A TEKNOLOJ\u0130\", \"haber_url\": \"https://www.bloomberght.com/mia-teknoloji-cinli-ortagi-ile-turkiye-de-yatirima-gidecek-3742039\"},\n    {\"sirket_adi\": \"OYAK \u00c7\u0130MENTO FABR\u0130KALARI\", \"haber_url\": \"https://www.haberturk.com/oyak-renault-8-milyonuncu-araci-uretti-3770004-ekonomi\"}\n  ],\n  \"no_direct_news_found\": false\n}\n```"
+        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
       }
     },
     {
       "batch": 10,
       "stocks": [
-        "PETK\u0130M PETROK\u0130MYA HOLD\u0130NG",
-        "PEGASUS HAVA TA\u015eIMACILI\u011eI",
-        "QUA GRANITE HAYAL YAPI VE \u00dcR\u00dcNLER\u0130 SANAY\u0130 T\u0130CARET",
-        "REEDER TEKNOLOJ\u0130 SANAY\u0130 VE T\u0130CARET",
-        "R\u00d6NESANS GAYR\u0130MENKUL YATIRIM",
-        "HACI \u00d6MER SABANCI HOLD\u0130NG",
-        "SASA POLYESTER SANAY\u0130",
-        "SAY YEN\u0130LENEB\u0130L\u0130R ENERJ\u0130 EK\u0130PMANLARI SANAY\u0130 VE T\u0130CARET",
-        "SDT UZAY VE SAVUNMA TEKNOLOJ\u0130LER\u0130",
-        "SEL\u00c7UK ECZA DEPOSU T\u0130CARET VE SANAY\u0130"
+        "PETKİM PETROKİMYA HOLDİNG",
+        "PEGASUS HAVA TAŞIMACILIĞI",
+        "QUA GRANITE HAYAL YAPI VE ÜRÜNLERİ SANAYİ TİCARET",
+        "REEDER TEKNOLOJİ SANAYİ VE TİCARET",
+        "RÖNESANS GAYRİMENKUL YATIRIM",
+        "HACI ÖMER SABANCI HOLDİNG",
+        "SASA POLYESTER SANAYİ",
+        "SAY YENİLENEBİLİR ENERJİ EKİPMANLARI SANAYİ VE TİCARET",
+        "SDT UZAY VE SAVUNMA TEKNOLOJİLERİ",
+        "SELÇUK ECZA DEPOSU TİCARET VE SANAYİ"
       ],
       "result": {
         "error": "Failed to parse response",
@@ -197,35 +197,35 @@
     {
       "batch": 11,
       "stocks": [
-        "T\u00dcRK\u0130YE \u015e\u0130\u015eE VE CAM FABR\u0130KALARI",
-        "SMART G\u00dcNE\u015e ENERJ\u0130S\u0130 TEKNOLOJ\u0130LER\u0130 ARA\u015eTIRMA GEL\u0130\u015eT\u0130RME \u00dcRET\u0130M SANAY\u0130 VE T\u0130CARET",
-        "\u015eOK MARKETLER T\u0130CARET",
-        "TAB GIDA SANAY\u0130 VE T\u0130CARET",
-        "TAV HAVAL\u0130MANLARI HOLD\u0130NG",
-        "TURKCELL \u0130LET\u0130\u015e\u0130M H\u0130ZMETLER\u0130",
-        "T\u00dcRK HAVA YOLLARI",
-        "TEKFEN HOLD\u0130NG",
-        "TEKNOSA \u0130\u00c7 VE DI\u015e T\u0130CARET",
-        "T\u00dcMOSAN MOTOR VE TRAKT\u00d6R SANAY\u0130"
+        "TÜRKİYE ŞİŞE VE CAM FABRİKALARI",
+        "SMART GÜNEŞ ENERJİSİ TEKNOLOJİLERİ ARAŞTIRMA GELİŞTİRME ÜRETİM SANAYİ VE TİCARET",
+        "ŞOK MARKETLER TİCARET",
+        "TAB GIDA SANAYİ VE TİCARET",
+        "TAV HAVALİMANLARI HOLDİNG",
+        "TURKCELL İLETİŞİM HİZMETLERİ",
+        "TÜRK HAVA YOLLARI",
+        "TEKFEN HOLDİNG",
+        "TEKNOSA İÇ VE DIŞ TİCARET",
+        "TÜMOSAN MOTOR VE TRAKTÖR SANAYİ"
       ],
       "result": {
         "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [\n    {\n      \"sirket_adi\": \"T\u00dcRK\u0130YE \u015e\u0130\u015eE VE CAM FABR\u0130KALARI\",\n      \"haber_url\": \"https://www.haberturk.com/sisecam-in-2024-te-net-satislari-186-milyar-lira-oldu-3769541-ekonomi\"\n    },\n    {\n      \"sirket_adi\": \"TURKCELL \u0130LET\u0130\u015e\u0130M H\u0130ZMETLER\u0130\",\n      \"haber_url\": \"https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/turkcellden-2024te-54-8-milyar-tl-yatirim_ID1608318/\"\n    },\n    {\n      \"sirket_adi\": \"T\u00dcRK HAVA YOLLARI\",\n      \"haber_url\": \"https://www.cnnturk.com/ekonomi/thy-temettu-2025-thy-temettu-odemeleri-ne-zaman-yapilacak-thyao-thy-hisse-senedi-temettu-bedeli-ne-kadar-kapa-bildirildi-2247535\"\n    }\n  ],\n  \"no_direct_news_found\": false\n}\n```"
+        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
       }
     },
     {
       "batch": 12,
       "stocks": [
-        "TOFA\u015e T\u00dcRK OTOMOB\u0130L FABR\u0130KASI",
-        "TRABZONSPOR SPORT\u0130F YATIRIM VE FUTBOL \u0130\u015eLETMEC\u0130L\u0130\u011e\u0130 T\u0130CARET",
-        "T\u00dcRK TELEKOM\u00dcN\u0130KASYON",
-        "T\u00dcRK TRAKT\u00d6R VE Z\u0130RAAT MAK\u0130NELER\u0130",
-        "TUKA\u015e GIDA SANAY\u0130 VE T\u0130CARET",
-        "T\u00dcPRA\u015e-T\u00dcRK\u0130YE PETROL RAF\u0130NER\u0130LER\u0130",
-        "T\u00dcRK\u0130YE S\u0130GORTA",
-        "\u00dcLKER B\u0130SK\u00dcV\u0130 SANAY\u0130",
-        "VESTEL BEYAZ E\u015eYA SANAY\u0130 VE T\u0130CARET",
-        "VESTEL ELEKTRON\u0130K SANAY\u0130 VE T\u0130CARET"
+        "TOFAŞ TÜRK OTOMOBİL FABRİKASI",
+        "TRABZONSPOR SPORTİF YATIRIM VE FUTBOL İŞLETMECİLİĞİ TİCARET",
+        "TÜRK TELEKOMÜNİKASYON",
+        "TÜRK TRAKTÖR VE ZİRAAT MAKİNELERİ",
+        "TUKAŞ GIDA SANAYİ VE TİCARET",
+        "TÜPRAŞ-TÜRKİYE PETROL RAFİNERİLERİ",
+        "TÜRKİYE SİGORTA",
+        "ÜLKER BİSKÜVİ SANAYİ",
+        "VESTEL BEYAZ EŞYA SANAYİ VE TİCARET",
+        "VESTEL ELEKTRONİK SANAYİ VE TİCARET"
       ],
       "result": {
         "error": "Failed to parse response",
@@ -235,9 +235,9 @@
     {
       "batch": 13,
       "stocks": [
-        "YEO TEKNOLOJ\u0130 ENERJ\u0130 VE END\u00dcSTR\u0130",
-        "YAYLA AGRO GIDA SANAY\u0130 VE T\u0130CARET",
-        "ZORLU ENERJ\u0130 ELEKTR\u0130K \u00dcRET\u0130M"
+        "YEO TEKNOLOJİ ENERJİ VE ENDÜSTRİ",
+        "YAYLA AGRO GIDA SANAYİ VE TİCARET",
+        "ZORLU ENERJİ ELEKTRİK ÜRETİM"
       ],
       "result": {
         "error": "Failed to parse response",
