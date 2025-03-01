@@ -7,9 +7,6 @@ import os
 from datetime import datetime, timedelta
 import time
 
-import openai
-from openai import OpenAI
-
 def get_website_html(url):
     """Fetch HTML content from a given URL"""
     headers = {
@@ -94,21 +91,87 @@ def scrape_economy_news():
     # Return just the list of all unique links with full URLs
     return list(all_unique_links)
 
+def load_historical_data():
+    """Load historical news data from JSON file"""
+    if os.path.exists("news_archive.json"):
+        try:
+            with open("news_archive.json", "r", encoding="utf-8") as f:
+                return json.load(f)
+        except:
+            return {"entries": []}
+    return {"entries": []}
+
+def save_historical_data(data):
+    """Save historical news data to JSON file"""
+    with open("news_archive.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+def clean_old_entries(data, hours=24):
+    """Remove entries older than specified hours"""
+    now = datetime.utcnow()
+    retention_limit = now - timedelta(hours=hours)
+    
+    # Convert retention_limit to ISO format string for comparison
+    retention_limit_iso = retention_limit.isoformat()
+    
+    # Filter out entries older than retention_limit
+    data["entries"] = [entry for entry in data["entries"] if entry["timestamp"] > retention_limit_iso]
+    return data
+
+def identify_new_articles(current_links, historical_data):
+    """Identify articles that are new in this run"""
+    # Get all historical links
+    historical_links = set()
+    for entry in historical_data["entries"]:
+        historical_links.update(entry["news_links"])
+    
+    # Find links that are in current_links but not in historical_links
+    new_articles = [link for link in current_links if link not in historical_links]
+    return new_articles
+
 def main():
     """Main function to run the news scraper."""
-    news_links = scrape_economy_news()
-    print("Scraped News Links:")
-    for link in news_links:
-        print(link)
+    current_time = datetime.utcnow()
+    current_time_iso = current_time.isoformat()
     
-    # Optionally, store the news links in a JSON file with a timestamp
-    data = {
-        "timestamp": datetime.utcnow().isoformat(),
+    # Scrape current news
+    news_links = scrape_economy_news()
+    print(f"Scraped {len(news_links)} news links at {current_time_iso}")
+    
+    # Load historical data
+    historical_data = load_historical_data()
+    
+    # Identify new articles
+    new_articles = identify_new_articles(news_links, historical_data)
+    
+    # Add current batch to historical data
+    historical_data["entries"].append({
+        "timestamp": current_time_iso,
         "news_links": news_links
-    }
-    with open("news_links.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2)
-    print("News links saved to news_links.json")
+    })
+    
+    # Clean old entries (older than 24 hours)
+    historical_data = clean_old_entries(historical_data)
+    
+    # Save updated historical data
+    save_historical_data(historical_data)
+    
+    # Output new articles
+    if new_articles:
+        print(f"\n{len(new_articles)} NEW ARTICLES FOUND IN THIS RUN:")
+        for article in new_articles:
+            print(article)
+        
+        # Save new articles to a separate file
+        new_articles_data = {
+            "timestamp": current_time_iso,
+            "new_articles": new_articles
+        }
+        with open("new_articles.json", "w", encoding="utf-8") as f:
+            json.dump(new_articles_data, f, indent=2)
+        print("New articles saved to new_articles.json")
+    else:
+        print("\nNo new articles found in this run.")
 
 if __name__ == "__main__":
     main()
