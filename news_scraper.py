@@ -281,8 +281,24 @@ def save_stock_news_mapping(stock_news_mapping, timestamp):
     
     return mapping_data
 
+def ensure_mapping_file_exists():
+    """Ensure stock_news_mapping.json file exists"""
+    if not os.path.exists("stock_news_mapping.json"):
+        # Create an empty mapping file
+        mapping_data = {
+            "timestamp": datetime.utcnow().isoformat(),
+            "updated": False,
+            "stock_news": {}
+        }
+        with open("stock_news_mapping.json", "w", encoding="utf-8") as f:
+            json.dump(mapping_data, f, indent=2, ensure_ascii=False)
+        print("Created initial stock_news_mapping.json file")
+
 def main():
     """Main function to run the news scraper and analyzer."""
+    # Ensure mapping file exists
+    ensure_mapping_file_exists()
+    
     current_time = datetime.utcnow()
     current_time_iso = current_time.isoformat()
     
