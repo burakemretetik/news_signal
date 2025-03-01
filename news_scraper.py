@@ -145,7 +145,7 @@ def load_bist100_stocks():
         with open(csv_path, "wb") as f:
             f.write(response.content)
     
-    bist_100 = pd.read_csv(csv_path, encoding="urf-8")
+    bist_100 = pd.read_csv(csv_path, encoding="utf-8")
     return bist_100["Hisse Adı"].tolist()
 
 def create_stock_batches(stock_list, n=10):
