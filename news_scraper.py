@@ -350,30 +350,42 @@ def main():
     with open("stock_news_analysis.json", "w", encoding="utf-8") as f:
         json.dump(analysis_results, f, indent=2, ensure_ascii=False)
     
-    # Create and save stock-to-news mapping
-    stock_news_mapping = {}
+    # Load existing stock news mapping if it exists
+    existing_mapping = {}
+    if os.path.exists("stock_news_mapping.json"):
+        try:
+            with open("stock_news_mapping.json", "r", encoding="utf-8") as f:
+                mapping_data = json.load(f)
+                existing_mapping = mapping_data.get("stock_news", {})
+        except:
+            print("Error loading existing stock news mapping, creating new one")
+    
+    # Update the mapping with any new direct news
+    new_mapping_items = False
     if analysis_results["total_direct_news"] > 0:
         for news_item in analysis_results["direct_news"]:
             stock_name = news_item['sirket_adi']
             news_url = news_item['haber_url']
             
-            if stock_name not in stock_news_mapping:
-                stock_news_mapping[stock_name] = []
+            if stock_name not in existing_mapping:
+                existing_mapping[stock_name] = []
             
-            stock_news_mapping[stock_name].append(news_url)
+            if news_url not in existing_mapping[stock_name]:
+                existing_mapping[stock_name].append(news_url)
+                new_mapping_items = True
     
-    # Save the mapping
+    # Save the mapping file in every run
     mapping_data = {
         "timestamp": current_time_iso,
-        "updated": len(stock_news_mapping) > 0,
-        "stock_news": stock_news_mapping
+        "updated": new_mapping_items,
+        "stock_news": existing_mapping
     }
     
     with open("stock_news_mapping.json", "w", encoding="utf-8") as f:
         json.dump(mapping_data, f, indent=2, ensure_ascii=False)
     
     print(f"\nStock news mapping updated at {current_time_iso}")
-    if len(stock_news_mapping) > 0:
-        print(f"Found news for {len(stock_news_mapping)} stocks")
+    if new_mapping_items:
+        print(f"Added new news for stocks")
     else:
-        print("No stock-specific news found in this run")
+        print("No new stock-specific news added in this run")
