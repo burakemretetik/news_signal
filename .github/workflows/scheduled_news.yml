@@ -37,6 +37,10 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add news_archive.json new_articles.json stock_news_analysis.json stock_news_mapping.json
+          git add news_archive.json new_articles.json stock_news_analysis.json
+          # Only add stock_news_mapping.json if it exists
+          if [ -f "stock_news_mapping.json" ]; then
+            git add stock_news_mapping.json
+          fi
           git commit -m "Update news and stock analysis [skip ci]" || echo "No changes to commit"
           git push
