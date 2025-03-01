@@ -253,6 +253,34 @@ def analyze_news_for_stocks(new_articles):
     print(f"Stock news analysis completed. Found {len(direct_news)} relevant news articles.")
     return analysis_results
 
+def create_stock_news_mapping(direct_news):
+    """Create a mapping of stocks to their related news articles"""
+    stock_news_mapping = {}
+    
+    for news_item in direct_news:
+        stock_name = news_item['sirket_adi']
+        news_url = news_item['haber_url']
+        
+        if stock_name not in stock_news_mapping:
+            stock_news_mapping[stock_name] = []
+        
+        stock_news_mapping[stock_name].append(news_url)
+    
+    return stock_news_mapping
+
+def save_stock_news_mapping(stock_news_mapping, timestamp):
+    """Save the stock-to-news mapping to a JSON file"""
+    mapping_data = {
+        "timestamp": timestamp,
+        "updated": len(stock_news_mapping) > 0,
+        "stock_news": stock_news_mapping
+    }
+    
+    with open("stock_news_mapping.json", "w", encoding="utf-8") as f:
+        json.dump(mapping_data, f, indent=2, ensure_ascii=False)
+    
+    return mapping_data
+
 def main():
     """Main function to run the news scraper and analyzer."""
     current_time = datetime.utcnow()
@@ -295,7 +323,7 @@ def main():
             json.dump(new_articles_data, f, indent=2, ensure_ascii=False)
         print("New articles saved to new_articles.json")
         
-        # Analyze new articles for stock relevance
+        # Analyze new articles for BIST 100 stock relevance
         print("\nAnalyzing new articles for BIST 100 stock relevance...")
         analysis_results = analyze_news_for_stocks(new_articles)
         
@@ -308,6 +336,15 @@ def main():
             print("\nNo relevant news found for BIST 100 stocks.")
     else:
         print("\nNo new articles found in this run.")
-
-if __name__ == "__main__":
-    main()
+        # Create an empty analysis result
+        analysis_results = {
+            "timestamp": current_time_iso,
+            "total_batches": 0,
+            "total_direct_news": 0,
+            "direct_news": [],
+            "batch_results": []
+        }
+        
+        # Save the empty analysis to indicate the script ran but found no new articles
+        with open("stock_news_analysis.json", "w", encoding="utf-8") as f:
+            json.dump(analysis_results, f, indent=2, ensure_ascii=False)
