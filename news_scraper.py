@@ -155,7 +155,7 @@ def create_stock_batches(stock_list, n=10):
         stock_batches.append(stock_list[i : i + n])  # Slices list into batches of size n
     return stock_batches
 
-def get_llm_response(stock_batch, recent_news):
+def get_llm_response(stock_batch, recent_news): # Fix the error
     """Sends a prompt with stock batch and news to the LLM and gets a response."""
     prompt = f"""Analyze the news URLs below and identify **ONLY** URLs that **explicitly** mention one of my listed stocks.
     ----------
@@ -168,14 +168,12 @@ def get_llm_response(stock_batch, recent_news):
     3. **No interpretations/speculations**: If unsure, omit.
     ----------
     **Output Format**:
-    ```json
     {{
       "direct_news": [
         {{"sirket_adi": "COMPANY_NAME", "haber_url": "NEWS_URL"}}
       ],
       "no_direct_news_found": true/false
     }}
-    ```
     My Stocks: {stock_batch}
 
     News URL: {recent_news}"""
@@ -184,11 +182,19 @@ def get_llm_response(stock_batch, recent_news):
         response = client.chat.completions.create(
             model="gpt-4o-mini",  # Using gpt-4o-mini as specified
             messages=[
-                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "system", "content": "You are a helpful assistant. Respond with plain JSON only, no markdown formatting."},
                 {"role": "user", "content": prompt}
             ]
         )
-        return response.choices[0].message.content
+        content = response.choices[0].message.content
+        
+        # Remove markdown code block formatting if present
+        if content.startswith("```json") and content.endswith("```"):
+            content = content.strip("```json").strip("```").strip()
+        elif content.startswith("```") and content.endswith("```"):
+            content = content.strip("```").strip()
+            
+        return content
     except Exception as e:
         print(f"Error getting LLM response: {e}")
         return json.dumps({"direct_news": [], "no_direct_news_found": True, "error": str(e)})
