@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-03-01T16:28:11.488953",
+  "timestamp": "2025-03-01T16:44:28.798574",
   "total_batches": 13,
   "total_direct_news": 0,
   "direct_news": [],
@@ -19,8 +19,8 @@
         "AKSA AKRİLİK KİMYA SANAYİİ"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -38,8 +38,8 @@
         "ASELSAN ELEKTRONİK SANAYİ VE TİCARET"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -57,8 +57,8 @@
         "BORUSAN BİRLEŞİK BORU FABRİKALARI SANAYİ VE TİCARET"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -76,8 +76,8 @@
         "DOĞUŞ OTOMOTİV SERVİS VE TİCARET"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -95,8 +95,8 @@
         "EUROPOWER ENERJİ VE OTOMASYON TEKNOLOJİLERİ SANAYİ TİCARET"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -114,8 +114,8 @@
         "HEKTAŞ TİCARET"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -133,8 +133,8 @@
         "KALESERAMİK ÇANAKKALE KALEBODUR SERAMİK SANAYİ"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -152,8 +152,8 @@
         "MİGROS TİCARET"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -171,8 +171,8 @@
         "PEKER GAYRİMENKUL YATIRIM ORTAKLIĞI"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -190,8 +190,8 @@
         "SELÇUK ECZA DEPOSU TİCARET VE SANAYİ"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -209,8 +209,8 @@
         "TÜMOSAN MOTOR VE TRAKTÖR SANAYİ"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -228,8 +228,8 @@
         "VESTEL ELEKTRONİK SANAYİ VE TİCARET"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -240,8 +240,8 @@
         "ZORLU ENERJİ ELEKTRİK ÜRETİM"
       ],
       "result": {
-        "error": "Failed to parse response",
-        "raw_response": "```json\n{\n  \"direct_news\": [],\n  \"no_direct_news_found\": true\n}\n```"
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     }
   ]
