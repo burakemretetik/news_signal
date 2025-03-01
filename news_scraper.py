@@ -308,6 +308,15 @@ def main():
     # Save updated historical data
     save_historical_data(historical_data)
     
+    # Initialize analysis_results
+    analysis_results = {
+        "timestamp": current_time_iso,
+        "total_batches": 0,
+        "total_direct_news": 0,
+        "direct_news": [],
+        "batch_results": []
+    }
+    
     # Output new articles
     if new_articles:
         print(f"\n{len(new_articles)} NEW ARTICLES FOUND IN THIS RUN:")
@@ -336,15 +345,35 @@ def main():
             print("\nNo relevant news found for BIST 100 stocks.")
     else:
         print("\nNo new articles found in this run.")
-        # Create an empty analysis result
-        analysis_results = {
-            "timestamp": current_time_iso,
-            "total_batches": 0,
-            "total_direct_news": 0,
-            "direct_news": [],
-            "batch_results": []
-        }
-        
-        # Save the empty analysis to indicate the script ran but found no new articles
-        with open("stock_news_analysis.json", "w", encoding="utf-8") as f:
-            json.dump(analysis_results, f, indent=2, ensure_ascii=False)
+    
+    # Always save analysis results, even if empty
+    with open("stock_news_analysis.json", "w", encoding="utf-8") as f:
+        json.dump(analysis_results, f, indent=2, ensure_ascii=False)
+    
+    # Create and save stock-to-news mapping
+    stock_news_mapping = {}
+    if analysis_results["total_direct_news"] > 0:
+        for news_item in analysis_results["direct_news"]:
+            stock_name = news_item['sirket_adi']
+            news_url = news_item['haber_url']
+            
+            if stock_name not in stock_news_mapping:
+                stock_news_mapping[stock_name] = []
+            
+            stock_news_mapping[stock_name].append(news_url)
+    
+    # Save the mapping
+    mapping_data = {
+        "timestamp": current_time_iso,
+        "updated": len(stock_news_mapping) > 0,
+        "stock_news": stock_news_mapping
+    }
+    
+    with open("stock_news_mapping.json", "w", encoding="utf-8") as f:
+        json.dump(mapping_data, f, indent=2, ensure_ascii=False)
+    
+    print(f"\nStock news mapping updated at {current_time_iso}")
+    if len(stock_news_mapping) > 0:
+        print(f"Found news for {len(stock_news_mapping)} stocks")
+    else:
+        print("No stock-specific news found in this run")
