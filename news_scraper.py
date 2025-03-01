@@ -109,7 +109,7 @@ def load_historical_data():
 def save_historical_data(data):
     """Save historical news data to JSON file"""
     with open("news_archive.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2)
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
 def clean_old_entries(data, hours=24):
     """Remove entries older than specified hours"""
@@ -242,7 +242,7 @@ def analyze_news_for_stocks(new_articles):
     }
     
     with open("stock_news_analysis.json", "w", encoding="utf-8") as f:
-        json.dump(analysis_results, f, indent=2)
+        json.dump(analysis_results, f, indent=2, ensure_ascii=False)
     
     print(f"Stock news analysis completed. Found {len(direct_news)} relevant news articles.")
     return analysis_results
@@ -286,7 +286,7 @@ def main():
             "new_articles": new_articles
         }
         with open("new_articles.json", "w", encoding="utf-8") as f:
-            json.dump(new_articles_data, f, indent=2)
+            json.dump(new_articles_data, f, indent=2, ensure_ascii=False)
         print("New articles saved to new_articles.json")
         
         # Analyze new articles for stock relevance
