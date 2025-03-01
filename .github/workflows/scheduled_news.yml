@@ -2,7 +2,8 @@ name: Scheduled News Scraper and Stock Analyzer
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour on the hour
+    #- cron: '0 * * * *'  # Runs every hour on the hour
+    - cron: '*/10 * * * *'  # Runs every 10 minutes
   workflow_dispatch:  # Allows you to trigger the workflow manually
 
 jobs:
