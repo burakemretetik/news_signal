@@ -1,8 +1,39 @@
 {
-  "timestamp": "2025-03-02T15:20:31.002381",
+  "timestamp": "2025-03-02T16:24:58.744116",
   "total_batches": 13,
-  "total_direct_news": 0,
-  "direct_news": [],
+  "total_direct_news": 6,
+  "direct_news": [
+    {
+      "hisse_kodu": "ASELS",
+      "sirket_adi": "ASELSAN ELEKTRONİK SANAYİ VE TİCARET",
+      "haber_url": "https://www.bloomberght.com/aselsan-bmc-ile-yeni-sozlesme-imzaladi-3742401"
+    },
+    {
+      "hisse_kodu": "CIMSA",
+      "sirket_adi": "ÇİMSA ÇİMENTO SANAYİ VE TİCARET",
+      "haber_url": "https://www.haberturk.com/cimsadan-2024-yilinda-282-milyar-tl-ciro-3769779-ekonomi"
+    },
+    {
+      "hisse_kodu": "MIATK",
+      "sirket_adi": "MİA TEKNOLOJİ",
+      "haber_url": "https://www.bloomberght.com/mia-teknoloji-cinli-ortagi-ile-turkiye-de-yatirima-gidecek-3742039"
+    },
+    {
+      "hisse_kodu": "THYAO",
+      "sirket_adi": "TÜRK HAVA YOLLARI",
+      "haber_url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/thy-2024-yilinda-85-2-milyon-yolcuya-hizmet-verdi_ID1608355/"
+    },
+    {
+      "hisse_kodu": "TCELL",
+      "sirket_adi": "TURKCELL İLETİŞİM HİZMETLERİ",
+      "haber_url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/turkcellden-2024te-54-8-milyar-tl-yatirim_ID1608318/"
+    },
+    {
+      "hisse_kodu": "TUPRS",
+      "sirket_adi": "TÜPRAŞ-TÜRKİYE PETROL RAFİNERİLERİ",
+      "haber_url": "https://www.haberturk.com/oyak-renault-8-milyonuncu-araci-uretti-3770004-ekonomi"
+    }
+  ],
   "batch_results": [
     {
       "batch": 1,
@@ -98,8 +129,14 @@
         }
       ],
       "result": {
-        "direct_news": [],
-        "no_direct_news_found": true
+        "direct_news": [
+          {
+            "hisse_kodu": "ASELS",
+            "sirket_adi": "ASELSAN ELEKTRONİK SANAYİ VE TİCARET",
+            "haber_url": "https://www.bloomberght.com/aselsan-bmc-ile-yeni-sozlesme-imzaladi-3742401"
+          }
+        ],
+        "no_direct_news_found": false
       }
     },
     {
@@ -196,8 +233,14 @@
         }
       ],
       "result": {
-        "direct_news": [],
-        "no_direct_news_found": true
+        "direct_news": [
+          {
+            "hisse_kodu": "CIMSA",
+            "sirket_adi": "ÇİMSA ÇİMENTO SANAYİ VE TİCARET",
+            "haber_url": "https://www.haberturk.com/cimsadan-2024-yilinda-282-milyar-tl-ciro-3769779-ekonomi"
+          }
+        ],
+        "no_direct_news_found": false
       }
     },
     {
@@ -441,8 +484,14 @@
         }
       ],
       "result": {
-        "direct_news": [],
-        "no_direct_news_found": true
+        "direct_news": [
+          {
+            "hisse_kodu": "MIATK",
+            "sirket_adi": "MİA TEKNOLOJİ",
+            "haber_url": "https://www.bloomberght.com/mia-teknoloji-cinli-ortagi-ile-turkiye-de-yatirima-gidecek-3742039"
+          }
+        ],
+        "no_direct_news_found": false
       }
     },
     {
@@ -539,8 +588,19 @@
         }
       ],
       "result": {
-        "direct_news": [],
-        "no_direct_news_found": true
+        "direct_news": [
+          {
+            "hisse_kodu": "THYAO",
+            "sirket_adi": "TÜRK HAVA YOLLARI",
+            "haber_url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/thy-2024-yilinda-85-2-milyon-yolcuya-hizmet-verdi_ID1608355/"
+          },
+          {
+            "hisse_kodu": "TCELL",
+            "sirket_adi": "TURKCELL İLETİŞİM HİZMETLERİ",
+            "haber_url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/turkcellden-2024te-54-8-milyar-tl-yatirim_ID1608318/"
+          }
+        ],
+        "no_direct_news_found": false
       }
     },
     {
@@ -588,8 +648,14 @@
         }
       ],
       "result": {
-        "direct_news": [],
-        "no_direct_news_found": true
+        "direct_news": [
+          {
+            "hisse_kodu": "TUPRS",
+            "sirket_adi": "TÜPRAŞ-TÜRKİYE PETROL RAFİNERİLERİ",
+            "haber_url": "https://www.haberturk.com/oyak-renault-8-milyonuncu-araci-uretti-3770004-ekonomi"
+          }
+        ],
+        "no_direct_news_found": false
       }
     },
     {

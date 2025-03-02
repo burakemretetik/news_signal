@@ -1,5 +1,48 @@
 {
-  "timestamp": "2025-03-02T15:20:31.002381",
-  "updated": false,
-  "stock_news": {}
+  "timestamp": "2025-03-02T16:24:58.744116",
+  "updated": true,
+  "stock_news": {
+    "ASELS": {
+      "hisse_kodu": "ASELS",
+      "sirket_adi": "ASELSAN ELEKTRONİK SANAYİ VE TİCARET",
+      "haberler": [
+        "https://www.bloomberght.com/aselsan-bmc-ile-yeni-sozlesme-imzaladi-3742401"
+      ]
+    },
+    "CIMSA": {
+      "hisse_kodu": "CIMSA",
+      "sirket_adi": "ÇİMSA ÇİMENTO SANAYİ VE TİCARET",
+      "haberler": [
+        "https://www.haberturk.com/cimsadan-2024-yilinda-282-milyar-tl-ciro-3769779-ekonomi"
+      ]
+    },
+    "MIATK": {
+      "hisse_kodu": "MIATK",
+      "sirket_adi": "MİA TEKNOLOJİ",
+      "haberler": [
+        "https://www.bloomberght.com/mia-teknoloji-cinli-ortagi-ile-turkiye-de-yatirima-gidecek-3742039"
+      ]
+    },
+    "THYAO": {
+      "hisse_kodu": "THYAO",
+      "sirket_adi": "TÜRK HAVA YOLLARI",
+      "haberler": [
+        "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/thy-2024-yilinda-85-2-milyon-yolcuya-hizmet-verdi_ID1608355/"
+      ]
+    },
+    "TCELL": {
+      "hisse_kodu": "TCELL",
+      "sirket_adi": "TURKCELL İLETİŞİM HİZMETLERİ",
+      "haberler": [
+        "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/turkcellden-2024te-54-8-milyar-tl-yatirim_ID1608318/"
+      ]
+    },
+    "TUPRS": {
+      "hisse_kodu": "TUPRS",
+      "sirket_adi": "TÜPRAŞ-TÜRKİYE PETROL RAFİNERİLERİ",
+      "haberler": [
+        "https://www.haberturk.com/oyak-renault-8-milyonuncu-araci-uretti-3770004-ekonomi"
+      ]
+    }
+  }
 }
