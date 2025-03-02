@@ -33,10 +33,14 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python news_scraper.py
 
+      - name: Update Timestamp
+        run: |
+          echo "Last run: $(date)" > last_run_timestamp.txt
+          
       - name: Commit and Push Changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add news_archive.json new_articles.json stock_news_analysis.json stock_news_mapping.json
-          git commit -m "Update news and stock analysis [skip ci]" || echo "No changes to commit"
+          git add last_run_timestamp.txt news_archive.json new_articles.json stock_news_analysis.json stock_news_mapping.json
+          git commit -m "Update news and stock analysis [skip ci]"
           git push
