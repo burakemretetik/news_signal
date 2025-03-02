@@ -290,6 +290,7 @@ def create_stock_news_mapping(direct_news):
         
         if stock_code not in stock_news_mapping:
             stock_news_mapping[stock_code] = {
+                "hisse_kodu": stock_code,  # Added this line to include the stock code in each entry
                 "sirket_adi": news_item['sirket_adi'],
                 "haberler": []
             }
@@ -415,11 +416,15 @@ def main():
         new_mapping_items = False
         for stock_code, stock_data in new_mapping.items():
             if stock_code not in existing_mapping:
-                # Add new stock entry
+                # Add new stock entry with hisse_kodu
                 existing_mapping[stock_code] = {
+                    "hisse_kodu": stock_code,  # Added this line to include the stock code in each entry
                     "sirket_adi": stock_data["sirket_adi"],
                     "haberler": []
                 }
+            elif "hisse_kodu" not in existing_mapping[stock_code]:
+                # Add hisse_kodu to existing entries that might not have it
+                existing_mapping[stock_code]["hisse_kodu"] = stock_code
             
             # Add any new news URLs
             for news_url in stock_data["haberler"]:
