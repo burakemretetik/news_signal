@@ -103,32 +103,18 @@ def load_historical_data():
             with open("news_archive.json", "r", encoding="utf-8") as f:
                 return json.load(f)
         except:
-            return {"entries": []}
-    return {"entries": []}
+            return {"timestamp": "", "news_links": []}
+    return {"timestamp": "", "news_links": []}
 
 def save_historical_data(data):
     """Save historical news data to JSON file"""
     with open("news_archive.json", "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-def clean_old_entries(data, hours=24):
-    """Remove entries older than specified hours"""
-    now = datetime.utcnow()
-    retention_limit = now - timedelta(hours=hours)
-    
-    # Convert retention_limit to ISO format string for comparison
-    retention_limit_iso = retention_limit.isoformat()
-    
-    # Filter out entries older than retention_limit
-    data["entries"] = [entry for entry in data["entries"] if entry["timestamp"] > retention_limit_iso]
-    return data
-
 def identify_new_articles(current_links, historical_data):
     """Identify articles that are new in this run"""
-    # Get all historical links
-    historical_links = set()
-    for entry in historical_data["entries"]:
-        historical_links.update(entry["news_links"])
+    # Get historical links
+    historical_links = set(historical_data.get("news_links", []))
     
     # Find links that are in current_links but not in historical_links
     new_articles = [link for link in current_links if link not in historical_links]
@@ -290,7 +276,7 @@ def create_stock_news_mapping(direct_news):
         
         if stock_code not in stock_news_mapping:
             stock_news_mapping[stock_code] = {
-                "hisse_kodu": stock_code,  # Added this line to include the stock code in each entry
+                "hisse_kodu": stock_code,
                 "sirket_adi": news_item['sirket_adi'],
                 "haberler": []
             }
@@ -343,17 +329,14 @@ def main():
     # Identify new articles
     new_articles = identify_new_articles(news_links, historical_data)
     
-    # Add current batch to historical data
-    historical_data["entries"].append({
+    # Replace historical data with current batch - UPDATED PART
+    new_historical_data = {
         "timestamp": current_time_iso,
         "news_links": news_links
-    })
-    
-    # Clean old entries (older than 24 hours)
-    historical_data = clean_old_entries(historical_data)
+    }
     
     # Save updated historical data
-    save_historical_data(historical_data)
+    save_historical_data(new_historical_data)
     
     # Always create/update the new_articles.json file with timestamp even if empty
     new_articles_data = {
@@ -418,7 +401,7 @@ def main():
             if stock_code not in existing_mapping:
                 # Add new stock entry with hisse_kodu
                 existing_mapping[stock_code] = {
-                    "hisse_kodu": stock_code,  # Added this line to include the stock code in each entry
+                    "hisse_kodu": stock_code,
                     "sirket_adi": stock_data["sirket_adi"],
                     "haberler": []
                 }
