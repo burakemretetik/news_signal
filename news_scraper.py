@@ -324,7 +324,16 @@ def main():
     # Save updated historical data
     save_historical_data(historical_data)
     
-    # Initialize analysis_results
+    # Always create/update the new_articles.json file with timestamp even if empty
+    new_articles_data = {
+        "timestamp": current_time_iso,
+        "new_articles": new_articles if new_articles else []
+    }
+    with open("new_articles.json", "w", encoding="utf-8") as f:
+        json.dump(new_articles_data, f, indent=2, ensure_ascii=False)
+    print(f"New articles file updated at {current_time_iso}")
+    
+    # Initialize analysis_results with current timestamp
     analysis_results = {
         "timestamp": current_time_iso,
         "total_batches": 0,
@@ -338,15 +347,6 @@ def main():
         print(f"\n{len(new_articles)} NEW ARTICLES FOUND IN THIS RUN:")
         for article in new_articles:
             print(article)
-        
-        # Save new articles to a separate file
-        new_articles_data = {
-            "timestamp": current_time_iso,
-            "new_articles": new_articles
-        }
-        with open("new_articles.json", "w", encoding="utf-8") as f:
-            json.dump(new_articles_data, f, indent=2, ensure_ascii=False)
-        print("New articles saved to new_articles.json")
         
         # Analyze new articles for BIST 100 stock relevance
         print("\nAnalyzing new articles for BIST 100 stock relevance...")
@@ -362,7 +362,8 @@ def main():
     else:
         print("\nNo new articles found in this run.")
     
-    # Always save analysis results, even if empty
+    # Always save analysis results with updated timestamp, even if empty
+    analysis_results["timestamp"] = current_time_iso  # Ensure timestamp is always current
     with open("stock_news_analysis.json", "w", encoding="utf-8") as f:
         json.dump(analysis_results, f, indent=2, ensure_ascii=False)
     
@@ -390,9 +391,9 @@ def main():
                 existing_mapping[stock_name].append(news_url)
                 new_mapping_items = True
     
-    # Save the mapping file in every run
+    # Always save the mapping file with current timestamp in every run
     mapping_data = {
-        "timestamp": current_time_iso,
+        "timestamp": current_time_iso,  # Always update timestamp
         "updated": new_mapping_items,
         "stock_news": existing_mapping
     }
@@ -405,3 +406,6 @@ def main():
         print(f"Added new news for stocks")
     else:
         print("No new stock-specific news added in this run")
+
+if __name__ == "__main__":
+    main()
