@@ -135,7 +135,7 @@ def identify_new_articles(current_links, historical_data):
     return new_articles
 
 def load_bist100_stocks():
-    """Load BIST 100 stocks from CSV or download if not available"""
+    """Load BIST 100 stocks from CSV with both names and codes"""
     csv_path = "bist_100_hisseleri.csv"
     
     if not os.path.exists(csv_path):
@@ -146,17 +146,41 @@ def load_bist100_stocks():
             f.write(response.content)
     
     bist_100 = pd.read_csv(csv_path)
-    return bist_100["Hisse Adı"].tolist()
+    
+    # Return a list of dictionaries with both code and name
+    stocks_with_codes = []
+    for _, row in bist_100.iterrows():
+        stocks_with_codes.append({
+            "kod": row["Hisse Kodu"],
+            "adi": row["Hisse Adı"]
+        })
+    
+    return stocks_with_codes
+
+def create_stock_name_code_mapping(stocks_list):
+    """Creates a mapping between stock names and codes"""
+    name_to_code = {}
+    for stock in stocks_list:
+        name_to_code[stock["adi"]] = stock["kod"]
+    return name_to_code
 
 def create_stock_batches(stock_list, n=10):
-    """Creates batches of stock names from a list."""
+    """Creates batches of stock information from a list."""
     stock_batches = []
     for i in range(0, len(stock_list), n):
         stock_batches.append(stock_list[i : i + n])  # Slices list into batches of size n
     return stock_batches
 
-def get_llm_response(stock_batch, recent_news): # Fix the error
+def get_llm_response(stock_batch, recent_news):
     """Sends a prompt with stock batch and news to the LLM and gets a response."""
+    # Create a stock list with both names and codes for the prompt
+    stock_info_list = []
+    for stock in stock_batch:
+        stock_info_list.append(f'{stock["kod"]} - {stock["adi"]}')
+    
+    # Join the stock info into a single string for the prompt
+    stocks_text = ", ".join(stock_info_list)
+    
     prompt = f"""Analyze the news URLs below and identify **ONLY** URLs that **explicitly** mention one of my listed stocks.
     ----------
     **Rules**:
@@ -170,11 +194,11 @@ def get_llm_response(stock_batch, recent_news): # Fix the error
     **Output Format**:
     {{
       "direct_news": [
-        {{"sirket_adi": "COMPANY_NAME", "haber_url": "NEWS_URL"}}
+        {{"hisse_kodu": "STOCK_CODE", "sirket_adi": "COMPANY_NAME", "haber_url": "NEWS_URL"}}
       ],
       "no_direct_news_found": true/false
     }}
-    My Stocks: {stock_batch}
+    My Stocks: {stocks_text}
 
     News URL: {recent_news}"""
 
@@ -201,11 +225,14 @@ def get_llm_response(stock_batch, recent_news): # Fix the error
 
 def analyze_news_for_stocks(new_articles):
     """Analyze new articles for relevance to BIST 100 stocks"""
-    # Load BIST 100 stocks
-    stock_list = load_bist100_stocks()
+    # Load BIST 100 stocks with codes
+    stocks_with_codes = load_bist100_stocks()
+    
+    # Create a mapping from company name to stock code for later use
+    name_to_code_map = create_stock_name_code_mapping(stocks_with_codes)
     
     # Create batches of 10 stocks
-    stock_batches = create_stock_batches(stock_list, n=10)
+    stock_batches = create_stock_batches(stocks_with_codes, n=10)
     
     # Initialize results
     all_results = []
@@ -258,13 +285,16 @@ def create_stock_news_mapping(direct_news):
     stock_news_mapping = {}
     
     for news_item in direct_news:
-        stock_name = news_item['sirket_adi']
+        stock_code = news_item['hisse_kodu']
         news_url = news_item['haber_url']
         
-        if stock_name not in stock_news_mapping:
-            stock_news_mapping[stock_name] = []
+        if stock_code not in stock_news_mapping:
+            stock_news_mapping[stock_code] = {
+                "sirket_adi": news_item['sirket_adi'],
+                "haberler": []
+            }
         
-        stock_news_mapping[stock_name].append(news_url)
+        stock_news_mapping[stock_code]["haberler"].append(news_url)
     
     return stock_news_mapping
 
@@ -356,7 +386,7 @@ def main():
         if analysis_results["total_direct_news"] > 0:
             print("\nRELEVANT NEWS FOUND:")
             for news in analysis_results["direct_news"]:
-                print(f"Stock: {news['sirket_adi']} - URL: {news['haber_url']}")
+                print(f"Stock: {news['hisse_kodu']} - {news['sirket_adi']} - URL: {news['haber_url']}")
         else:
             print("\nNo relevant news found for BIST 100 stocks.")
     else:
@@ -377,19 +407,27 @@ def main():
         except:
             print("Error loading existing stock news mapping, creating new one")
     
-    # Update the mapping with any new direct news
-    new_mapping_items = False
+    # Create new mapping from direct news
     if analysis_results["total_direct_news"] > 0:
-        for news_item in analysis_results["direct_news"]:
-            stock_name = news_item['sirket_adi']
-            news_url = news_item['haber_url']
+        new_mapping = create_stock_news_mapping(analysis_results["direct_news"])
+        
+        # Merge with existing mapping
+        new_mapping_items = False
+        for stock_code, stock_data in new_mapping.items():
+            if stock_code not in existing_mapping:
+                # Add new stock entry
+                existing_mapping[stock_code] = {
+                    "sirket_adi": stock_data["sirket_adi"],
+                    "haberler": []
+                }
             
-            if stock_name not in existing_mapping:
-                existing_mapping[stock_name] = []
-            
-            if news_url not in existing_mapping[stock_name]:
-                existing_mapping[stock_name].append(news_url)
-                new_mapping_items = True
+            # Add any new news URLs
+            for news_url in stock_data["haberler"]:
+                if news_url not in existing_mapping[stock_code]["haberler"]:
+                    existing_mapping[stock_code]["haberler"].append(news_url)
+                    new_mapping_items = True
+    else:
+        new_mapping_items = False
     
     # Always save the mapping file with current timestamp in every run
     mapping_data = {
