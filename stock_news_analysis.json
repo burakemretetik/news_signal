@@ -1,22 +1,17 @@
 {
-  "timestamp": "2025-03-03T18:10:50.355821",
+  "timestamp": "2025-03-03T19:06:30.598416",
   "total_batches": 13,
-  "total_direct_news": 3,
+  "total_direct_news": 2,
   "direct_news": [
     {
       "hisse_kodu": "BIMAS",
       "sirket_adi": "BİM BİRLEŞİK MAĞAZALAR",
-      "haber_url": "https://www.haberturk.com/bim-rekabet-cezasi-icin-itiraz-basvurusunda-bulundu-3770507-ekonomi"
+      "haber_url": "https://www.cnnturk.com/ekonomi/rekabet-kurulunun-1-3-milyar-liralik-cezasina-bimden-itiraz-2249239"
     },
     {
-      "hisse_kodu": "THYAO",
-      "sirket_adi": "TÜRK HAVA YOLLARI",
-      "haber_url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/thynin-kambocya-seferleri-basliyor_ID1608385/"
-    },
-    {
-      "hisse_kodu": "TMSN",
-      "sirket_adi": "TÜMOSAN MOTOR VE TRAKTÖR SANAYİ",
-      "haber_url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/tusastan-yeni-anka-3-paylasimi_ID1608394/"
+      "hisse_kodu": "SAHOL",
+      "sirket_adi": "HACI ÖMER SABANCI HOLDİNG",
+      "haber_url": "https://www.haberturk.com/sabanci-holding-den-temettu-karari-3770612-ekonomi"
     }
   ],
   "batch_results": [
@@ -167,7 +162,7 @@
           {
             "hisse_kodu": "BIMAS",
             "sirket_adi": "BİM BİRLEŞİK MAĞAZALAR",
-            "haber_url": "https://www.haberturk.com/bim-rekabet-cezasi-icin-itiraz-basvurusunda-bulundu-3770507-ekonomi"
+            "haber_url": "https://www.cnnturk.com/ekonomi/rekabet-kurulunun-1-3-milyar-liralik-cezasina-bimden-itiraz-2249239"
           }
         ],
         "no_direct_news_found": false
@@ -512,8 +507,14 @@
         }
       ],
       "result": {
-        "direct_news": [],
-        "no_direct_news_found": true
+        "direct_news": [
+          {
+            "hisse_kodu": "SAHOL",
+            "sirket_adi": "HACI ÖMER SABANCI HOLDİNG",
+            "haber_url": "https://www.haberturk.com/sabanci-holding-den-temettu-karari-3770612-ekonomi"
+          }
+        ],
+        "no_direct_news_found": false
       }
     },
     {
@@ -561,19 +562,8 @@
         }
       ],
       "result": {
-        "direct_news": [
-          {
-            "hisse_kodu": "THYAO",
-            "sirket_adi": "TÜRK HAVA YOLLARI",
-            "haber_url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/thynin-kambocya-seferleri-basliyor_ID1608385/"
-          },
-          {
-            "hisse_kodu": "TMSN",
-            "sirket_adi": "TÜMOSAN MOTOR VE TRAKTÖR SANAYİ",
-            "haber_url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/tusastan-yeni-anka-3-paylasimi_ID1608394/"
-          }
-        ],
-        "no_direct_news_found": false
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
