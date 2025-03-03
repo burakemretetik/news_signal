@@ -1,5 +1,27 @@
 {
-  "timestamp": "2025-03-02T13:22:26.932617",
-  "updated": false,
-  "stock_news": {}
+  "timestamp": "2025-03-03T18:10:50.355821",
+  "updated": true,
+  "stock_news": {
+    "BIMAS": {
+      "hisse_kodu": "BIMAS",
+      "sirket_adi": "BİM BİRLEŞİK MAĞAZALAR",
+      "haberler": [
+        "https://www.haberturk.com/bim-rekabet-cezasi-icin-itiraz-basvurusunda-bulundu-3770507-ekonomi"
+      ]
+    },
+    "THYAO": {
+      "hisse_kodu": "THYAO",
+      "sirket_adi": "TÜRK HAVA YOLLARI",
+      "haberler": [
+        "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/thynin-kambocya-seferleri-basliyor_ID1608385/"
+      ]
+    },
+    "TMSN": {
+      "hisse_kodu": "TMSN",
+      "sirket_adi": "TÜMOSAN MOTOR VE TRAKTÖR SANAYİ",
+      "haberler": [
+        "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/tusastan-yeni-anka-3-paylasimi_ID1608394/"
+      ]
+    }
+  }
 }
