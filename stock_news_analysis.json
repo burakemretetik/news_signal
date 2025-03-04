@@ -1,24 +1,8 @@
 {
-  "timestamp": "2025-03-04T08:10:48.113400",
+  "timestamp": "2025-03-04T09:09:04.333873",
   "total_batches": 13,
-  "total_direct_news": 3,
-  "direct_news": [
-    {
-      "hisse_kodu": "AEFES",
-      "sirket_adi": "ANADOLU EFES BİRACILIK VE MALT SANAYİİ",
-      "haber_url": "https://www.haberturk.com/anadolu-efes-ten-onarici-tarim-kilavuzu-3770741-ekonomi"
-    },
-    {
-      "hisse_kodu": "BIMAS",
-      "sirket_adi": "BİM BİRLEŞİK MAĞAZALAR",
-      "haber_url": "https://www.cnnturk.com/ekonomi/galeri/bim-4-mart-sali-2025-aktuel-urunler-uygun-fiyatlarla-alisveris-firsatlari-2249455"
-    },
-    {
-      "hisse_kodu": "THYAO",
-      "sirket_adi": "TÜRK HAVA YOLLARI",
-      "haber_url": "https://www.cnnturk.com/ekonomi/thy-temettu-2025-thy-temettu-odemeleri-ne-zaman-yapilacak-thyao-thy-hisse-senedi-temettu-bedeli-ne-kadar-kapa-bildirildi-2247535"
-    }
-  ],
+  "total_direct_news": 0,
+  "direct_news": [],
   "batch_results": [
     {
       "batch": 1,
@@ -65,14 +49,8 @@
         }
       ],
       "result": {
-        "direct_news": [
-          {
-            "hisse_kodu": "AEFES",
-            "sirket_adi": "ANADOLU EFES BİRACILIK VE MALT SANAYİİ",
-            "haber_url": "https://www.haberturk.com/anadolu-efes-ten-onarici-tarim-kilavuzu-3770741-ekonomi"
-          }
-        ],
-        "no_direct_news_found": false
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -169,14 +147,8 @@
         }
       ],
       "result": {
-        "direct_news": [
-          {
-            "hisse_kodu": "BIMAS",
-            "sirket_adi": "BİM BİRLEŞİK MAĞAZALAR",
-            "haber_url": "https://www.cnnturk.com/ekonomi/galeri/bim-4-mart-sali-2025-aktuel-urunler-uygun-fiyatlarla-alisveris-firsatlari-2249455"
-          }
-        ],
-        "no_direct_news_found": false
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
@@ -567,14 +539,8 @@
         }
       ],
       "result": {
-        "direct_news": [
-          {
-            "hisse_kodu": "THYAO",
-            "sirket_adi": "TÜRK HAVA YOLLARI",
-            "haber_url": "https://www.cnnturk.com/ekonomi/thy-temettu-2025-thy-temettu-odemeleri-ne-zaman-yapilacak-thyao-thy-hisse-senedi-temettu-bedeli-ne-kadar-kapa-bildirildi-2247535"
-          }
-        ],
-        "no_direct_news_found": false
+        "direct_news": [],
+        "no_direct_news_found": true
       }
     },
     {
