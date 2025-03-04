@@ -1,7 +1,617 @@
 {
-  "timestamp": "2025-03-03T23:08:16.635615",
-  "total_batches": 0,
+  "timestamp": "2025-03-04T00:39:46.725173",
+  "total_batches": 13,
   "total_direct_news": 0,
   "direct_news": [],
-  "batch_results": []
+  "batch_results": [
+    {
+      "batch": 1,
+      "stocks": [
+        {
+          "kod": "ADEL",
+          "adi": "ADEL KALEMCİLİK TİCARET VE SANAYİ"
+        },
+        {
+          "kod": "AEFES",
+          "adi": "ANADOLU EFES BİRACILIK VE MALT SANAYİİ"
+        },
+        {
+          "kod": "AGHOL",
+          "adi": "AG ANADOLU GRUBU HOLDİNG"
+        },
+        {
+          "kod": "AGROT",
+          "adi": "AGROTECH YÜKSEK TEKNOLOJİ VE YATIRIM"
+        },
+        {
+          "kod": "AHGAZ",
+          "adi": "AHLATCI DOĞAL GAZ DAĞITIM ENERJİ VE YATIRIM"
+        },
+        {
+          "kod": "AKBNK",
+          "adi": "AKBANK"
+        },
+        {
+          "kod": "AKCNS",
+          "adi": "AKÇANSA ÇİMENTO SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "AKFGY",
+          "adi": "AKFEN GAYRİMENKUL YATIRIM ORTAKLIĞI"
+        },
+        {
+          "kod": "AKFYE",
+          "adi": "AKFEN YENİLENEBİLİR ENERJİ"
+        },
+        {
+          "kod": "AKSA",
+          "adi": "AKSA AKRİLİK KİMYA SANAYİİ"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 2,
+      "stocks": [
+        {
+          "kod": "AKSEN",
+          "adi": "AKSA ENERJİ ÜRETİM"
+        },
+        {
+          "kod": "ALARK",
+          "adi": "ALARKO HOLDİNG"
+        },
+        {
+          "kod": "ALBRK",
+          "adi": "ALBARAKA TÜRK KATILIM BANKASI"
+        },
+        {
+          "kod": "ALFAS",
+          "adi": "ALFA SOLAR ENERJİ SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "ALTNY",
+          "adi": "ALTINAY SAVUNMA TEKNOLOJİLERİ"
+        },
+        {
+          "kod": "ANHYT",
+          "adi": "ANADOLU HAYAT EMEKLİLİK"
+        },
+        {
+          "kod": "ANSGR",
+          "adi": "ANADOLU ANONİM TÜRK SİGORTA Şİ"
+        },
+        {
+          "kod": "ARCLK",
+          "adi": "ARÇELİK"
+        },
+        {
+          "kod": "ARDYZ",
+          "adi": "ARD GRUP BİLİŞİM TEKNOLOJİLERİ"
+        },
+        {
+          "kod": "ASELS",
+          "adi": "ASELSAN ELEKTRONİK SANAYİ VE TİCARET"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 3,
+      "stocks": [
+        {
+          "kod": "ASTOR",
+          "adi": "ASTOR ENERJİ"
+        },
+        {
+          "kod": "BERA",
+          "adi": "BERA HOLDİNG"
+        },
+        {
+          "kod": "BFREN",
+          "adi": "BOSCH FREN SİSTEMLERİ SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "BIENY",
+          "adi": "BİEN YAPI ÜRÜNLERİ SANAYİ TURİZM VE TİCARET"
+        },
+        {
+          "kod": "BIMAS",
+          "adi": "BİM BİRLEŞİK MAĞAZALAR"
+        },
+        {
+          "kod": "BINHO",
+          "adi": "1000 YATIRIMLAR HOLDİNG"
+        },
+        {
+          "kod": "BIOEN",
+          "adi": "BİOTREND ÇEVRE VE ENERJİ YATIRIMLARI"
+        },
+        {
+          "kod": "BJKAS",
+          "adi": "BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "BOBET",
+          "adi": "BOĞAZİÇİ BETON SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "BRSAN",
+          "adi": "BORUSAN BİRLEŞİK BORU FABRİKALARI SANAYİ VE TİCARET"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 4,
+      "stocks": [
+        {
+          "kod": "BRYAT",
+          "adi": "BORUSAN YATIRIM VE PAZARLAMA"
+        },
+        {
+          "kod": "BSOKE",
+          "adi": "BATISÖKE SÖKE ÇİMENTO SANAYİİ"
+        },
+        {
+          "kod": "BTCIM",
+          "adi": "BATIÇİM BATI ANADOLU ÇİMENTO SANAYİİ"
+        },
+        {
+          "kod": "CANTE",
+          "adi": "ÇAN2 TERMİK"
+        },
+        {
+          "kod": "CCOLA",
+          "adi": "COCA-COLA İÇECEK"
+        },
+        {
+          "kod": "CIMSA",
+          "adi": "ÇİMSA ÇİMENTO SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "CLEBI",
+          "adi": "ÇELEBİ HAVA SERVİSİ"
+        },
+        {
+          "kod": "CVKMD",
+          "adi": "CVK MADEN İŞLETMELERİ SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "CWENE",
+          "adi": "CW ENERJİ MÜHENDİSLİK TİCARET VE SANAYİ"
+        },
+        {
+          "kod": "DOAS",
+          "adi": "DOĞUŞ OTOMOTİV SERVİS VE TİCARET"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 5,
+      "stocks": [
+        {
+          "kod": "DOHOL",
+          "adi": "DOĞAN ŞİRKETLER GRUBU HOLDİNG"
+        },
+        {
+          "kod": "ECILC",
+          "adi": "EİS ECZACIBAŞI İLAÇ SINAİ VE FİNANSAL YATIRIMLAR SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "ECZYT",
+          "adi": "ECZACIBAŞI YATIRIM HOLDİNG ORTAKLIĞI"
+        },
+        {
+          "kod": "EGEEN",
+          "adi": "EGE ENDÜSTRİ VE TİCARET"
+        },
+        {
+          "kod": "EKGYO",
+          "adi": "EMLAK KONUT GAYRİMENKUL YATIRIM ORTAKLIĞI"
+        },
+        {
+          "kod": "ENERY",
+          "adi": "ENERYA ENERJİ"
+        },
+        {
+          "kod": "ENJSA",
+          "adi": "ENERJİSA ENERJİ"
+        },
+        {
+          "kod": "ENKAI",
+          "adi": "ENKA İNŞAAT VE SANAYİ"
+        },
+        {
+          "kod": "EREGL",
+          "adi": "EREĞLİ DEMİR VE ÇELİK FABRİKALARI"
+        },
+        {
+          "kod": "EUPWR",
+          "adi": "EUROPOWER ENERJİ VE OTOMASYON TEKNOLOJİLERİ SANAYİ TİCARET"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 6,
+      "stocks": [
+        {
+          "kod": "EUREN",
+          "adi": "EUROPEN ENDÜSTRİ İNŞAAT SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "FENER",
+          "adi": "FENERBAHÇE FUTBOL"
+        },
+        {
+          "kod": "FROTO",
+          "adi": "FORD OTOMOTİV SANAYİ"
+        },
+        {
+          "kod": "GARAN",
+          "adi": "TÜRKİYE GARANTİ BANKASI"
+        },
+        {
+          "kod": "GESAN",
+          "adi": "GİRİŞİM ELEKTRİK SANAYİ TAAHHÜT VE TİCARET"
+        },
+        {
+          "kod": "GOLTS",
+          "adi": "GÖLTAŞ GÖLLER BÖLGESİ ÇİMENTO SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "GUBRF",
+          "adi": "GÜBRE FABRİKALARI"
+        },
+        {
+          "kod": "GWIND",
+          "adi": "GALATA WIND ENERJİ"
+        },
+        {
+          "kod": "HALKB",
+          "adi": "TÜRKİYE HALK BANKASI"
+        },
+        {
+          "kod": "HEKTS",
+          "adi": "HEKTAŞ TİCARET"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 7,
+      "stocks": [
+        {
+          "kod": "IEYHO",
+          "adi": "IŞIKLAR ENERJİ VE YAPI HOLDİNG"
+        },
+        {
+          "kod": "IPEKE",
+          "adi": "İPEK DOĞAL ENERJİ KAYNAKLARI ARAŞTIRMA VE ÜRETİM"
+        },
+        {
+          "kod": "ISGYO",
+          "adi": "İŞ GAYRİMENKUL YATIRIM ORTAKLIĞI"
+        },
+        {
+          "kod": "ISMEN",
+          "adi": "İŞ YATIRIM MENKUL DEĞERLER"
+        },
+        {
+          "kod": "IZENR",
+          "adi": "İZDEMİR ENERJİ ELEKTRİK ÜRETİM"
+        },
+        {
+          "kod": "KARSN",
+          "adi": "KARSAN OTOMOTİV SANAYİİ VE TİCARET"
+        },
+        {
+          "kod": "KAYSE",
+          "adi": "KAYSERİ ŞEKER FABRİKASI"
+        },
+        {
+          "kod": "KCAER",
+          "adi": "KOCAER ÇELİK SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "KCHOL",
+          "adi": "KOÇ HOLDİNG"
+        },
+        {
+          "kod": "KLSER",
+          "adi": "KALESERAMİK ÇANAKKALE KALEBODUR SERAMİK SANAYİ"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 8,
+      "stocks": [
+        {
+          "kod": "KONTR",
+          "adi": "KONTROLMATİK TEKNOLOJİ ENERJİ VE MÜHENDİSLİK"
+        },
+        {
+          "kod": "KONYA",
+          "adi": "KONYA ÇİMENTO SANAYİİ"
+        },
+        {
+          "kod": "KOZAA",
+          "adi": "KOZA ANADOLU METAL MADENCİLİK İŞLETMELERİ"
+        },
+        {
+          "kod": "KOZAL",
+          "adi": "KOZA ALTIN İŞLETMELERİ"
+        },
+        {
+          "kod": "KTLEV",
+          "adi": "KATILIMEVİM TASARRUF FİNANSMAN"
+        },
+        {
+          "kod": "LIDER",
+          "adi": "LDR TURİZM"
+        },
+        {
+          "kod": "LMKDC",
+          "adi": "LİMAK DOĞU ANADOLU ÇİMENTO SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "MAGEN",
+          "adi": "MARGÜN ENERJİ ÜRETİM SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "MAVI",
+          "adi": "MAVİ GİYİM SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "MGROS",
+          "adi": "MİGROS TİCARET"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 9,
+      "stocks": [
+        {
+          "kod": "MIATK",
+          "adi": "MİA TEKNOLOJİ"
+        },
+        {
+          "kod": "MPARK",
+          "adi": "MLP SAĞLIK HİZMETLERİ"
+        },
+        {
+          "kod": "NTHOL",
+          "adi": "NET HOLDİNG"
+        },
+        {
+          "kod": "OBAMS",
+          "adi": "OBA MAKARNACILIK SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "ODAS",
+          "adi": "ODAŞ ELEKTRİK ÜRETİM SANAYİ TİCARET"
+        },
+        {
+          "kod": "OTKAR",
+          "adi": "OTOKAR OTOMOTİV VE SAVUNMA SANAYİ"
+        },
+        {
+          "kod": "OYAKC",
+          "adi": "OYAK ÇİMENTO FABRİKALARI"
+        },
+        {
+          "kod": "PAPIL",
+          "adi": "PAPİLON SAVUNMA TEKNOLOJİ VE TİCARET"
+        },
+        {
+          "kod": "PASEU",
+          "adi": "PASİFİK EURASİA LOJİSTİK DIŞ TİCARET"
+        },
+        {
+          "kod": "PEKGY",
+          "adi": "PEKER GAYRİMENKUL YATIRIM ORTAKLIĞI"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 10,
+      "stocks": [
+        {
+          "kod": "PETKM",
+          "adi": "PETKİM PETROKİMYA HOLDİNG"
+        },
+        {
+          "kod": "PGSUS",
+          "adi": "PEGASUS HAVA TAŞIMACILIĞI"
+        },
+        {
+          "kod": "QUAGR",
+          "adi": "QUA GRANITE HAYAL YAPI VE ÜRÜNLERİ SANAYİ TİCARET"
+        },
+        {
+          "kod": "REEDR",
+          "adi": "REEDER TEKNOLOJİ SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "RGYAS",
+          "adi": "RÖNESANS GAYRİMENKUL YATIRIM"
+        },
+        {
+          "kod": "SAHOL",
+          "adi": "HACI ÖMER SABANCI HOLDİNG"
+        },
+        {
+          "kod": "SASA",
+          "adi": "SASA POLYESTER SANAYİ"
+        },
+        {
+          "kod": "SAYAS",
+          "adi": "SAY YENİLENEBİLİR ENERJİ EKİPMANLARI SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "SDTTR",
+          "adi": "SDT UZAY VE SAVUNMA TEKNOLOJİLERİ"
+        },
+        {
+          "kod": "SELEC",
+          "adi": "SELÇUK ECZA DEPOSU TİCARET VE SANAYİ"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 11,
+      "stocks": [
+        {
+          "kod": "SISE",
+          "adi": "TÜRKİYE ŞİŞE VE CAM FABRİKALARI"
+        },
+        {
+          "kod": "SMRTG",
+          "adi": "SMART GÜNEŞ ENERJİSİ TEKNOLOJİLERİ ARAŞTIRMA GELİŞTİRME ÜRETİM SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "SOKM",
+          "adi": "ŞOK MARKETLER TİCARET"
+        },
+        {
+          "kod": "TABGD",
+          "adi": "TAB GIDA SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "TAVHL",
+          "adi": "TAV HAVALİMANLARI HOLDİNG"
+        },
+        {
+          "kod": "TCELL",
+          "adi": "TURKCELL İLETİŞİM HİZMETLERİ"
+        },
+        {
+          "kod": "THYAO",
+          "adi": "TÜRK HAVA YOLLARI"
+        },
+        {
+          "kod": "TKFEN",
+          "adi": "TEKFEN HOLDİNG"
+        },
+        {
+          "kod": "TKNSA",
+          "adi": "TEKNOSA İÇ VE DIŞ TİCARET"
+        },
+        {
+          "kod": "TMSN",
+          "adi": "TÜMOSAN MOTOR VE TRAKTÖR SANAYİ"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 12,
+      "stocks": [
+        {
+          "kod": "TOASO",
+          "adi": "TOFAŞ TÜRK OTOMOBİL FABRİKASI"
+        },
+        {
+          "kod": "TSPOR",
+          "adi": "TRABZONSPOR SPORTİF YATIRIM VE FUTBOL İŞLETMECİLİĞİ TİCARET"
+        },
+        {
+          "kod": "TTKOM",
+          "adi": "TÜRK TELEKOMÜNİKASYON"
+        },
+        {
+          "kod": "TTRAK",
+          "adi": "TÜRK TRAKTÖR VE ZİRAAT MAKİNELERİ"
+        },
+        {
+          "kod": "TUKAS",
+          "adi": "TUKAŞ GIDA SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "TUPRS",
+          "adi": "TÜPRAŞ-TÜRKİYE PETROL RAFİNERİLERİ"
+        },
+        {
+          "kod": "TURSG",
+          "adi": "TÜRKİYE SİGORTA"
+        },
+        {
+          "kod": "ULKER",
+          "adi": "ÜLKER BİSKÜVİ SANAYİ"
+        },
+        {
+          "kod": "VESBE",
+          "adi": "VESTEL BEYAZ EŞYA SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "VESTL",
+          "adi": "VESTEL ELEKTRONİK SANAYİ VE TİCARET"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    },
+    {
+      "batch": 13,
+      "stocks": [
+        {
+          "kod": "YEOTK",
+          "adi": "YEO TEKNOLOJİ ENERJİ VE ENDÜSTRİ"
+        },
+        {
+          "kod": "YYLGD",
+          "adi": "YAYLA AGRO GIDA SANAYİ VE TİCARET"
+        },
+        {
+          "kod": "ZOREN",
+          "adi": "ZORLU ENERJİ ELEKTRİK ÜRETİM"
+        }
+      ],
+      "result": {
+        "direct_news": [],
+        "no_direct_news_found": true
+      }
+    }
+  ]
 }
