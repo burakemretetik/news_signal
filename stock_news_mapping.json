@@ -1,20 +1,22 @@
 {
-  "timestamp": "2025-03-04T07:08:55.810575",
-  "updated": false,
+  "timestamp": "2025-03-04T08:10:48.113400",
+  "updated": true,
   "stock_news": {
     "BIMAS": {
       "hisse_kodu": "BIMAS",
       "sirket_adi": "BİM BİRLEŞİK MAĞAZALAR",
       "haberler": [
         "https://www.haberturk.com/bim-rekabet-cezasi-icin-itiraz-basvurusunda-bulundu-3770507-ekonomi",
-        "https://www.cnnturk.com/ekonomi/rekabet-kurulunun-1-3-milyar-liralik-cezasina-bimden-itiraz-2249239"
+        "https://www.cnnturk.com/ekonomi/rekabet-kurulunun-1-3-milyar-liralik-cezasina-bimden-itiraz-2249239",
+        "https://www.cnnturk.com/ekonomi/galeri/bim-4-mart-sali-2025-aktuel-urunler-uygun-fiyatlarla-alisveris-firsatlari-2249455"
       ]
     },
     "THYAO": {
       "hisse_kodu": "THYAO",
       "sirket_adi": "TÜRK HAVA YOLLARI",
       "haberler": [
-        "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/thynin-kambocya-seferleri-basliyor_ID1608385/"
+        "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/thynin-kambocya-seferleri-basliyor_ID1608385/",
+        "https://www.cnnturk.com/ekonomi/thy-temettu-2025-thy-temettu-odemeleri-ne-zaman-yapilacak-thyao-thy-hisse-senedi-temettu-bedeli-ne-kadar-kapa-bildirildi-2247535"
       ]
     },
     "TMSN": {
@@ -29,6 +31,13 @@
       "sirket_adi": "HACI ÖMER SABANCI HOLDİNG",
       "haberler": [
         "https://www.haberturk.com/sabanci-holding-den-temettu-karari-3770612-ekonomi"
+      ]
+    },
+    "AEFES": {
+      "hisse_kodu": "AEFES",
+      "sirket_adi": "ANADOLU EFES BİRACILIK VE MALT SANAYİİ",
+      "haberler": [
+        "https://www.haberturk.com/anadolu-efes-ten-onarici-tarim-kilavuzu-3770741-ekonomi"
       ]
     }
   }
